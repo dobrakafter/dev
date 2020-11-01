@@ -1,0 +1,591 @@
+{
+  "select_payment": {
+    "label": "Pilih Pembayaran",
+    "caption": {
+      "credit_card": "Bayar dengan Kartu Visa atau MasterCard",
+      "credit_card_jcb": "Bayar dengan Kartu Visa, MasterCard, atau JCB",
+      "credit_card_amex": "Bayar dengan Kartu Visa, MasterCard, atau Amex",
+      "credit_card_jcb_amex": "Bayar dengan Kartu Visa, MasterCard, JCB, atau Amex",
+      "bank_transfer": "Bayar dari ATM Bersama, Prima, atau Alto",
+      "cimb_clicks": "Bayar dengan akun OCTO Clicks Anda",
+      "epay_bri": "Bayar dengan akun e-Pay BRI Anda",
+      "mandiri_ecash": "Bayar dengan akun LINE Pay e-cash | mandiri e-cash Anda",
+      "telkomsel_cash": "Bayar dengan akun Telkomsel Cash Anda",
+      "indomaret": "Bayar di Indomaret",
+      "bca_klikpay": "Bayar dengan BCA KlikPay",
+      "klikbca": "Bayar dengan akun KlikBCA Anda",
+      "gopay": "Bayar menggunakan saldo GoPay Anda",
+      "shopeepay": "Bayar menggunakan saldo ShopeePay Anda",
+      "gopay_qris": "Scan kode QR dengan GoPay atau e-wallet lainnya",
+      "shopeepay_qris": "Scan kode QR dengan ShopeePay atau e-wallet lainnya",
+      "akulaku": "Bayar dengan akun Akulaku Anda",
+      "alfamart": "Bayar di gerai Alfamart, Alfamidi, atau Dan+Dan.",
+      "danamon_online": "Bayar dengan akun Danamon Online Banking Anda"
+    }
+  },
+  "credit_card": {
+    "card_holder_error": "Nama harus menggunakan alfabet",
+    "card_holder_label": "Nama pemegang kartu",
+    "card_details": "Masukkan informasi kartu",
+    "card_number": "Nomor kartu",
+    "expiry_date": "Berlaku hingga",
+    "cvv": "CVV",
+    "cvv_helper": "CVV adalah 3 (atau 6) digit angka kode keamanan yang tercetak di belakang kartu Anda",
+    "customer_details": "Informasi penagihan",
+    "invalid_card_number": "Nomor kartu tidak valid",
+    "invalid_expiry_date": "Tanggal berlaku tidak valid",
+    "invalid_cvv": "CVV tidak valid",
+    "invalid_bin": "Kartu tidak berlaku untuk transaksi ini, coba gunakan kartu lain",
+    "bin_channel_validation": "Kartu tidak berlaku untuk transaksi online",
+    "card_declined": "Kartu Anda ditolak oleh Bank",
+    "installment_label": "Bayar dengan cicilan %(q)s",
+    "no_installment": "Tanpa cicilan",
+    "choose_inst_term": "Pilih masa cicilan",
+    "mo": "Bln",
+    "point_toggle": "Saya ingin menggunakan point reward dari kartu kredit/debit ini",
+    "point_toggle_mandiri": "Gunakan mandiri fiestapoin",
+    "point_inquiry_failed_pop": "<strong>MAAF!</strong> Kami tidak dapat menukarkan poin reward Anda. Silakan coba lagi atau bayar tanpa menggunakan poin.",
+    "point_inquiry_failed_notice": "Gagal redeem poin reward",
+    "point_insufficient_notice": "Maaf, poin anda tidak mencukupi",
+    "point_discount": "Potongan Poin",
+    "promo_select": "Pilih Promo",
+    "amount_to_pay": "Jumlah yang Dibayar",
+    "use_points": "GUNAKAN POIN",
+    "point_header": "Gunakan",
+    "use_points_mandiri": "Bayar dengan mandiri fiestapoin",
+    "without_use_points_mandiri": "Bayar tanpa mandiri fiestapoin",
+    "passcode_reg_title": "Buat passcode Anda",
+    "passcode_reg_description": "Anda perlu memasukan passcode untuk transaksi selanjutnya",
+    "passconf_reg_title": "Konfirmasi passcode",
+    "passconf_reg_description": "Jangan pernah memberi passcode Anda ke siapapun",
+    "code_confirmation_title": "Konfirmasi Kode Verifikasi",
+    "code_confirmation_description": "Silakan masukan kode verifikasi yang dikirim ke",
+    "error_invalid_confirmation_code": "<strong>Error</strong>. kode verifikasi salah",
+    "error_send_confirmation_code": "<strong>Error</strong>. Saat ini Anda tidak dapat melenjutkan proses pendaftaran kartu",
+    "error_tokenization": "<strong>Kartu gagal diproses</strong>. Periksa kembali input anda atau gunakan kartu lain.",
+    "error_installment": "Harus bayar dengan cicilan, silakan pilih cicilan.",
+    "error_installment_bank_not_supported": "Mohon maaf nomor kartu yang Anda gunakan tidak sesuai dengan promo cicilan ini"
+  },
+  "gopay": {
+    "back_to_store": "KEMBALI",
+    "pay_now_button": "BAYAR DENGAN GOPAY",
+    "qr_instruction_1": "Klik <strong>Bayar dengan GoPay</strong>.",
+    "qr_instruction_2": "Buka aplikasi <strong>Gojek</strong> di HP Anda.",
+    "qr_instruction_3": "Klik <strong>Bayar</strong>.",
+    "qr_instruction_4": "Arahkan kamera Anda ke <strong>Kode QR</strong>.",
+    "qr_instruction_5": "Periksa kembali detail pembayaran Anda di aplikasi <strong>Gojek</strong> dan tekan <strong>Pay</strong>.",
+    "qr_instruction_6": "Transaksi Anda selesai.",
+    "qr_finish_instruction_1": "Buka aplikasi <strong>Gojek</strong> di HP Anda.",
+    "qr_finish_instruction_2": "Klik <strong>Bayar</strong>.",
+    "qr_finish_instruction_3": "Arahkan kamera Anda ke <strong>Kode QR</strong>.",
+    "qr_finish_instruction_4": "Periksa kembali detail pembayaran Anda di aplikasi <strong>Gojek</strong> dan tekan <strong>Pay</strong>.",
+    "qr_finish_instruction_5": "Transaksi Anda selesai.",
+    "deep_link_instruction_1": "Tekan <strong>Bayar dengan GoPay</strong>.",
+    "deep_link_instruction_2": "Aplikasi <strong>Gojek</strong> akan terbuka.",
+    "deep_link_instruction_3": "Cek detail transaksi Anda, kemudian tekan <strong>Lanjutkan</strong>.",
+    "deep_link_instruction_4": "Cek saldo GoPay Anda, kemudian tekan <strong>Bayar</strong>.",
+    "deep_link_instruction_5": "Masukkan <strong>PIN</strong> Anda.",
+    "deep_link_instruction_6": "Transaksi Anda telah selesai.",
+    "open_qr_code": "Buka <strong>Aplikasi Gojek</strong> di ponsel Anda lalu scan kode QR di bawah",
+    "instruction_qr_code": "<strong>PENTING!</strong> Selesaikan proses pembayaran sebelum kembali ke halaman merchant.",
+    "warning": "Mohon selesaikan pembayaran <strong>GoPay</strong> via aplikasi.",
+    "expiry_notice": "Harap selesaikan pembayaran sebelum",
+    "pending_1": "Silahkan ",
+    "pending_2": "tap di sini ",
+    "pending_3": "apabila Anda tidak otomatis dialihkan ke aplikasi Gojek.",
+    "error_charge_rejected": "Transaksi Anda ditolak. Silahkan coba lagi."
+  },
+  "shopeepay": {
+    "back_to_store": "KEMBALI",
+    "pay_now_button": "BAYAR DENGAN SHOPEEPAY",
+    "deep_link_instruction_1": "Tekan <strong>Bayar dengan ShopeePay</strong>.",
+    "deep_link_instruction_2": "Aplikasi <strong>Shopee</strong> akan terbuka.",
+    "deep_link_instruction_3": "Cek detail transaksi Anda, kemudian tekan <strong>Lanjutkan</strong>.",
+    "deep_link_instruction_4": "Cek saldo ShopeePay Anda, kemudian tekan <strong>Bayar</strong>.",
+    "deep_link_instruction_5": "Masukkan <strong>PIN</strong> Anda.",
+    "deep_link_instruction_6": "Transaksi Anda telah selesai.",
+    "warning": "Mohon selesaikan pembayaran <strong>ShopeePay</strong> via aplikasi.",
+    "expiry_notice": "Harap selesaikan pembayaran sebelum",
+    "pending_1": "Silahkan ",
+    "pending_2": "tap di sini ",
+    "pending_3": "apabila Anda tidak otomatis dialihkan ke aplikasi Shopee.",
+    "error_charge_rejected": "Transaksi Anda ditolak. Silahkan coba lagi."
+  },
+  "gopay_qris": {
+    "back_to_store": "Saya sudah bayar",
+    "pay_now_button": "Bayar sekarang",
+    "qr_instruction_1": "Buka aplikasi <strong>Gojek</strong> atau <strong>e-wallet lain</strong> Anda.",
+    "qr_instruction_2": "<strong>Pindai</strong> kode QR yang ada pada monitor Anda.",
+    "qr_instruction_3": "Periksa detail transaksi Anda pada aplikasi, lalu <i>tap</i> tombol <strong>Bayar</strong>.",
+    "qr_instruction_4": "Masukkan <strong>PIN</strong> Anda.",
+    "qr_instruction_5": "Transaksi Anda telah selesai.",
+    "qr_finish_instruction_1": "Buka aplikasi <strong>Gojek</strong> atau <strong>e-wallet lain</strong> Anda.",
+    "qr_finish_instruction_2": "<strong>Pindai</strong> kode QR yang ada pada monitor Anda.",
+    "qr_finish_instruction_3": "Periksa detail transaksi Anda pada aplikasi, lalu <i>tap</i> tombol <strong>Bayar</strong>.",
+    "qr_finish_instruction_4": "Masukkan <strong>PIN</strong> Anda.",
+    "qr_finish_instruction_5": "Transaksi Anda telah selesai.",
+    "open_qr_code": "Scan kode QR berikut dengan aplikasi Gojek.",
+    "instruction_qr_code": "<strong>PENTING!</strong> Selesaikan proses pembayaran sebelum kembali ke halaman merchant.",
+    "warning": "Anda bisa bayar lewat <strong>aplikasi pembayaran QR</strong> di bawah ini.",
+    "expiry_notice": "Selesaikan pembayaran sebelum",
+    "error_charge_rejected": "Transaksi Anda ditolak. Silahkan coba lagi"
+  },
+  "shopeepay_qris": {
+    "back_to_store": "Saya sudah bayar",
+    "pay_now_button": "Bayar sekarang",
+    "qr_instruction_1": "Buka aplikasi <strong>Shopee</strong> atau <strong>e-wallet lain</strong> Anda.",
+    "qr_instruction_2": "<strong>Pindai</strong> kode QR yang ada pada monitor Anda.",
+    "qr_instruction_3": "Periksa detail transaksi Anda pada aplikasi, lalu <i>tap</i> tombol <strong>Bayar</strong>.",
+    "qr_instruction_4": "Masukkan <strong>PIN</strong> Anda.",
+    "qr_instruction_5": "Transaksi Anda sudah selesai.",
+    "qr_finish_instruction_1": "Buka aplikasi <strong>Shopee</strong> atau <strong>e-wallet lain</strong> Anda.",
+    "qr_finish_instruction_2": "<strong>Pindai</strong> kode QR yang ada pada monitor Anda.",
+    "qr_finish_instruction_3": "Periksa detail transaksi Anda pada aplikasi, lalu <i>tap</i> tombol <strong>Bayar</strong>.",
+    "qr_finish_instruction_4": "Masukkan <strong>PIN</strong> Anda.",
+    "qr_finish_instruction_5": "Transaksi Anda sudah selesai.",
+    "open_qr_code": "Scan kode QR berikut dengan aplikasi Shopee.",
+    "instruction_qr_code": "<strong>PENTING!</strong> Selesaikan proses pembayaran sebelum kembali ke halaman merchant.",
+    "warning": "Anda bisa bayar lewat <strong>aplikasi pembayaran QR</strong> di bawah ini.",
+    "expiry_notice": "Selesaikan pembayaran sebelum",
+    "error_charge_rejected": "Transaksi Anda ditolak. Silahkan coba lagi"
+  },
+  "alfamart": {
+    "complete_at_alfamart": "Selesaikan Pembayaran",
+    "notice_result": "Silakan selesaikan pembayaran Anda di Alfamart, Alfamidi, or Dan+Dan sebelum: ",
+    "back_to_store": "KEMBALI",
+    "payment_code": "kode pembayaran",
+    "notice": "Bayar di gerai <strong>Alfamart</strong>, <strong>Alfamidi</strong>, atau <strong>Dan+Dan</strong>.",
+    "payment_code_instruction_1": "Silakan pergi ke gerai <strong>Alfamart</strong>, <strong>Alfamidi</strong>, or <strong>Dan+Dan</strong> terdekat dan berikanlah nomor<strong>Kode Pembayaran</strong> Anda ke kasir.",
+    "payment_code_instruction_2": "Kasir akan mengkonfirmasi transaksi dengan menanyakan <strong>jumlah transaksi</strong> dan <strong>nama merchant</strong>.",
+    "payment_code_instruction_3": "Konfirmasikan pembayaran Anda ke kasir.",
+    "payment_code_instruction_4": "Transaksi Anda berhasil! Anda akan mendapatkan email konfirmasi pembayaran dan simpanlah struk transaksi Anda.",
+    "instruction_1": "Setelah melakukan konfirmasi pembayaran, Anda akan diberikan <strong>Kode Pembayaran</strong> yang unik.",
+    "instruction_2": "Salinlah <strong>Kode Pembayaran</strong> Anda dan <strong>jumlah pembayaran</strong> yang akan dibayarkan. Jangan Khawatir, Kami juga akan mengirimkan salinan Kode Pembayaran dan Instruksi Pembayaran melalui email kepada Anda.",
+    "instruction_3": "Silakan pergi ke gerai <strong>Alfamart</strong>, <strong>Alfamidi</strong>, atau <strong>Dan+Dan</strong> terdekat dan berikanlah nomor<strong>Kode Pembayaran</strong> Anda ke kasir.",
+    "instruction_4": "Kasir akan mengkonfirmasi transaksi dengan menanyakan <strong>jumlah transaksi</strong> dan <strong>nama merchant</strong>.",
+    "instruction_5": "Konfirmasikan pembayaran Anda ke kasir.",
+    "instruction_6": "Transaksi Anda berhasil! Anda akan mendapatkan email konfirmasi pembayaran dan simpanlah struk transaksi Anda."
+  },
+  "bank_transfer": {
+    "select_bank": "Pilih bank",
+    "account_number": "Nomor rekening",
+    "email_instruction": "Masukkan alamat email Anda",
+    "all_bank_notice": "Anda bisa transfer dari SEMUA bank di Indonesia",
+    "title": {
+      "bca": "BCA",
+      "bni": "BNI",
+      "bri": "BRI",
+      "mandiri": "Mandiri",
+      "permata": "Permata",
+      "other_bank": "Bank lainnya",
+      "other_bank_2": "Jaringan ATM"
+    },
+    "header_title": {
+      "bca": "BCA ATM",
+      "bni": "BNI ATM",
+      "bri": "BRI ATM",
+      "mandiri": "Mandiri ATM",
+      "permata": "Permata ATM",
+      "other_bank": "Bank lainnya",
+      "other_bank_2": "Jaringan ATM"
+    },
+    "caption": {
+      "bca": "Bayar di ATM BCA atau internet banking",
+      "bni": "Bayar di ATM BNI atau internet banking",
+      "bri": "Bayar di ATM BRI atau internet banking",
+      "mandiri": "Bayar di ATM Mandiri atau internet banking",
+      "permata": "Bayar di ATM Permata atau internet banking",
+      "other_bank": "Bayar di jaringan ATM bank lain"
+    },
+    "overview": {
+      "bca": "Pembayaran dapat dilakukan melalui ATM BCA, KlikBCA, atau m-BCA",
+      "bni": "Pembayaran dapat dilakukan dari ATM BNI atau menggunakan jaringan Internet/SMS Banking BNI",
+      "mandiri": "Mandiri ATM/Bank Transfer harus dilakukan dari ATM Mandiri atau menggunakan Mandiri Internet Banking",
+      "permata": "ATM Transfer harus dilakukan dari ATM yang terhubung dengan jaringan ATM Bersama, Prima, atau Alto",
+      "other": "ATM Transfer dapat dilakukan melalui ATM yang terhubung dengan jaringan ATM Bersama, Prima, atau Alto"
+    },
+    "instructions": {
+      "bca": {
+        "atm": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Ke Rek BCA Virtual Account</strong>.",
+          "step4": "Masukkan <strong>Nomor Rekening</strong> pembayaran (11 digit) Anda lalu tekan <strong>Benar</strong>.",
+          "step5": "Masukkan jumlah tagihan yang akan anda bayar.",
+          "step6": "Pada halaman konfirmasi transfer akan muncul detail pembayaran Anda. Jika informasi telah sesuai tekan <strong>Ya</strong>."
+        },
+        "klikBca": {
+          "step1": "Pilih menu <strong>Transfer Dana</strong>.",
+          "step2": "Pilih <strong>Transfer ke BCA Virtual Account</strong>.",
+          "step3": "<strong>Masukkan nomor BCA Virtual Account</strong>, atau <strong>pilih Dari Daftar Transfer</strong>.",
+          "step4": "Jumlah yang akan ditransfer, nomor rekening dan nama merchant akan muncul di halaman konfirmasi pembayaran, jika informasi benar klik <strong>Lanjutkan</strong>.",
+          "step5": "Ambil <strong>BCA Token</strong> Anda dan masukkan KEYBCA Response <strong>APPLI 1</strong> dan Klik <strong>Submit</strong>.",
+          "step6": "Transaksi Anda selesai."
+        },
+        "mBca": {
+          "step1": "Lakukan log in pada aplikasi <strong>BCA Mobile</strong>.",
+          "step2": "Pilih menu <strong>m-BCA</strong>, kemudian masukkan <strong>kode akses m-BCA</strong>.",
+          "step3": "Pilih <strong>m-Transfer > BCA Virtual Account</strong>.",
+          "step4": "Pilih dari <strong>Daftar Transfer</strong>, atau masukkan <strong>Nomor Virtual Account</strong> tujuan.",
+          "step5": "Masukkan <strong>jumlah yang ingin dibayarkan</strong>.",
+          "step6": "Masukkan <strong>pin m-BCA</strong>.",
+          "step7": "Pembayaran selesai. Simpan notifikasi yang muncul sebagai bukti pembayaran."
+        }
+      },
+      "mandiri": {
+        "atm": {
+          "step1": "Pada menu utama, pilih <strong>Bayar/Beli</strong>.",
+          "step2": "Pilih <strong>Lainnya</strong>.",
+          "step3": "Pilih <strong>Multi Payment</strong>.",
+          "step4": "Masukkan 70012 (kode perusahaan Midtrans) lalu tekan <strong>Benar</strong>.",
+          "step5": "Masukkan <strong>Kode Pembayaran</strong> Anda lalu tekan <strong>Benar</strong>.",
+          "step6": "Pada halaman konfirmasi akan muncul detail pembayaran Anda. Jika informasi telah sesuai tekan <strong>Ya</strong>."
+        },
+        "internet_banking": {
+          "step1": "Login ke Internet Banking Mandiri <a href=\"https://ibank.bankmandiri.co.id/\">(https://ibank.bankmandiri.co.id/)</a>.",
+          "step2": "Pada menu utama, pilih <strong>Bayar</strong>, lalu pilih <strong>Multi Payment</strong>.",
+          "step3": "Pilih akun Anda di <strong>Dari Rekening</strong>, kemudian di Penyedia Jasa pilih <strong>Midtrans</strong>.",
+          "step4": "Masukkan <strong>Kode Pembayaran</strong> Anda dan klik <strong>Lanjutkan</strong>.",
+          "step5": "Konfirmasi pembayaran Anda menggunakan Mandiri Token."
+        }
+      },
+      "bni": {
+        "atm": {
+          "step1": "Pada menu utama, pilih <strong>Menu Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Rekening Tabungan</strong>.",
+          "step4": "Pilih <strong>Ke Rekening BNI</strong>.",
+          "step5": "Masukkan nomor virtual account dan pilih <strong>Tekan Jika Benar</strong>.",
+          "step6": "Masukkan jumlah tagihan yang akan anda bayar secara lengkap. Pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step7": "Jumlah yang dibayarkan, nomor rekening dan nama Merchant akan ditampilkan. Jika informasi telah sesuai, tekan <strong>Ya</strong>.",
+          "step8": "Transaksi Anda sudah selesai."
+        },
+        "internet_banking": {
+          "step1": "Ketik alamat <strong>https://ibank.bni.co.id</strong> kemudian klik <strong>Masuk</strong>.",
+          "step2": "Silakan masukkan <strong>User ID</strong> dan <strong>Password</strong>.",
+          "step3": "Klik menu <strong>Transfer</strong> kemudian pilih <strong>Tambah Rekening Favorit</strong>.",
+          "step4": "Masukkan nama, nomor rekening, dan email, lalu klik <strong>Lanjut</strong>.",
+          "step5": "Masukkan <strong>Kode Otentikasi</strong> dari token Anda dan klik <strong>Lanjut</strong>.",
+          "step6": "Kembali ke menu utama dan pilih <strong>Transfer</strong> lalu <strong>Transfer Antar Rekening BNI</strong>.",
+          "step7": "Pilih rekening yang telah Anda favoritkan sebelumnya di <strong>Rekening Tujuan</strong> lalu lanjutkan pengisian, dan tekan <strong>Lanjut</strong>.",
+          "step8": "Pastikan detail transaksi Anda benar, lalu masukkan <strong>Kode Otentikasi</strong> dan tekan <strong>Lanjut</strong>.",
+          "step9": "Transaksi selesai."
+        },
+        "mobile_banking": {
+          "step1": "Buka aplikasi BNI Mobile Banking dan login",
+          "step2": "Pilih menu Transfer",
+          "step3": "Pilih menu Virtual Account Billing",
+          "step4": "Pilih rekening debit yang akan digunakan",
+          "step5": "Pilih menu Input Baru dan masukkan 16 digit nomor Virtual Account",
+          "step6": "Informasi tagihan akan muncul pada halaman validasi",
+          "step7": "Jika informasi telah sesuai, masukkan Password Transaksi dan klik Lanjut",
+          "step8": "Transaksi Anda akan diproses"
+        }
+      },
+      "bri": {
+        "atm": {
+          "step1": "Pilih menu utama, pilih <strong>Transaksi Lain</strong>.",
+          "step2": "Pilih <strong>Pembayaran</strong>.",
+          "step3": "Pilih <strong>Lainnya</strong>.",
+          "step4": "Pilih <strong>BRIVA</strong>.",
+          "step5": "Masukkan <strong>Nomor BRIVA</strong> pelanggan dan pilih <strong>Benar</strong>.",
+          "step6": "Jumlah pembayaran, nomor BRIVA dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Ya</strong>.",
+          "step7": "Pembayaran telah selesai. Simpan bukti pembayaran Anda."
+        },
+        "internet_banking": {
+          "step1": "Masuk pada <strong>Internet Banking BRI</strong>.",
+          "step2": "Pilih menu <strong>Pembayaran & Pembelian</strong>.",
+          "step3": "Pilih sub menu <strong>BRIVA</strong>.",
+          "step4": "Masukkan <strong>Nomor BRIVA</strong>.",
+          "step5": "Jumlah pembayaran, nomor pembayaran, dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Kirim</strong>.",
+          "step6": "Masukkan <strong>password</strong> dan <strong>mToken</strong>, pilih <strong>Kirim</strong>.",
+          "step7": "Pembayaran telah selesai. Untuk mencetak bukti transaksi, pilih <strong>Cetak</strong>."
+        },
+        "mobile_banking": {
+          "step1": "Masuk ke dalam aplikasi <strong>BRI Mobile</strong>, pilih <strong>Mobile Banking BRI</strong>.",
+          "step2": "Pilih <strong>Pembayaran</strong>, lalu pilih <strong>BRIVA</strong>.",
+          "step3": "Masukkan <strong>nomor BRIVA</strong>.",
+          "step4": "Jumlah pembayaran, nomor pembayaran, dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Continue</strong>.",
+          "step5": "Masukkan <strong>Mobile Banking BRI PIN</strong>, pilih <strong>Ok.</strong>.",
+          "step6": "Pembayaran telah selesai. Simpan notifikasi sebagai bukti pembayaran."
+        }
+      },
+      "permata": {
+        "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+        "step2": "Pilih <strong>Pembayaran</strong>.",
+        "step3": "Pilih <strong>Pembayaran Lainnya</strong>.",
+        "step4": "Pilih <strong>Virtual Account</strong>.",
+        "step5": "Masukkan 16 digit No. Virtual Account yang dituju, lalu tekan <strong>Benar</strong>.",
+        "step6": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening, & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>.",
+        "step7": "Pilih rekening pembayaran Anda dan tekan <strong>Benar</strong>."
+      },
+      "other_bank_permata": {
+        "atm_bersama": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Antar Bank Online</strong>.",
+          "step4": "Masukkan 013 dan 16 digit No. Rekening.",
+          "step5": "Masukkan jumlah tagihan yang akan Anda bayar secara lengkap, Pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step6": "Kosongkan No. Referensi, lalu tekan <strong>Benar</strong>.",
+          "step7": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>."
+        },
+        "prima": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Rek Bank Lain</strong>.",
+          "step4": "Masukkan nomor <strong>013</strong> (kode Bank Permata) lalu tekan <strong>Benar</strong>.",
+          "step5": "Masukkan jumlah tagihan yang akan Anda bayar secara lengkap, pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step6": "Masukkan 16 digit No. Rekening pembayaran lalu tekan <strong>Benar</strong>.",
+          "step7": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>."
+        },
+        "alto": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transaksi Pembayaran</strong>.",
+          "step3": "Pilih <strong>Lain-lain</strong>.",
+          "step4": "Pilih <strong>Pembayaran Virtual Account</strong>.",
+          "step5": "Masukkan 16 digit No. Rekening pembayaran lalu tekan <strong>Benar</strong>.",
+          "step6": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan </strong>Benar</strong>.",
+          "step7": "Pilih rekening pembayaran Anda dan tekan <strong>Benar</strong>."
+        }
+      },
+      "other_bank_bni": {
+        "atm_bersama": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Antar Bank Online</strong>.",
+          "step4": "Masukkan 009 (kode Bank BNI) dan 16 digit No. Rekening.",
+          "step5": "Masukkan jumlah tagihan yang akan Anda bayar secara lengkap, Pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step6": "Kosongkan No. Referensi, lalu tekan <strong>Benar</strong>.",
+          "step7": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>."
+        },
+        "prima": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Rek Bank Lain</strong>.",
+          "step4": "Masukkan nomor <strong>009</strong> (kode Bank BNI) lalu tekan <strong>Benar</strong>.",
+          "step5": "Masukkan jumlah tagihan yang akan Anda bayar secara lengkap, pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step6": "Masukkan 16 digit No. Rekening pembayaran lalu tekan <strong>Benar</strong>.",
+          "step7": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>."
+        },
+        "alto": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Rek. Bank Lain</strong>.",
+          "step4": "Masukkan nomor <strong>009</strong> (kode Bank BNI) lalu tekan <strong>Benar</strong>.",
+          "step5": "Masukkan jumlah tagihan yang akan Anda bayar secara lengkap, pembayaran dengan jumlah tidak sesuai akan otomatis ditolak.",
+          "step6": "Masukkan 16 digit No. Rekening pembayaran lalu tekan <strong>Benar</strong>.",
+          "step7": "Pada halaman konfirmasi transfer akan muncul jumlah yang dibayarkan, nomor rekening & nama Merchant. Jika informasi telah sesuai tekan <strong>Benar</strong>."
+        }
+      },
+      "other_bank_bri": {
+        "atm_bersama": {
+          "step1": "Pada menu utama, pilih <strong>Lainnya</strong>.",
+          "step2": "Tekan menu <strong>Transfer</strong>.",
+          "step3": "Pilih menu <strong>Antar Bank Online</strong>.",
+          "step4": "Masukkan <strong>002</strong> (kode Bank BRI) dan <strong>nomor BRIVA</strong>, lalu pilih <strong>Benar</strong>.",
+          "step5": "Masukkan Jumlah Nominal/Tagihan yang akan dibayar, pilih <strong>Benar</strong>.",
+          "step6": "Kosongkan nomor referensi transfer, pilih <strong>Benar</strong>.",
+          "step7": "Jumlah pembayaran, nomor virtual account, dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Benar</strong>.",
+          "step8": "Pembayaran telah selesai. Simpan bukti pembayaran Anda."
+        },
+        "prima": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Ke Rek Bank Lain</strong>.",
+          "step4": "Masukkan <strong>002</strong> (kode Bank BRI) lalu pilih <strong>Benar</strong>.",
+          "step5": "Masukkan Jumlah Nominal/Tagihan yang akan dibayar, pilih <strong>Benar</strong>.",
+          "step6": "Masukkan <strong>nomor BRIVA</strong>, pilih <strong>Benar</strong>.",
+          "step7": "Jumlah pembayaran, nomor virtual account, dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Benar</strong>.",
+          "step8": "Pembayaran telah selesai. Simpan bukti pembayaran Anda."
+        },
+        "alto": {
+          "step1": "Pada menu utama, pilih <strong>Transaksi Lainnya</strong>.",
+          "step2": "Pilih <strong>Transfer</strong>.",
+          "step3": "Pilih <strong>Ke Rek. Bank Lain</strong>.",
+          "step4": "Masukkan Jumlah Nominal/Tagihan yang akan dibayar, pilih <strong>Benar</strong>.",
+          "step5": "Masukkan <strong>002</strong> (kode Bank BRI) lalu pilih <strong>Benar</strong>.",
+          "step6": "Masukkan <strong>nomor BRIVA</strong>, lalu pilih <strong>Benar</strong>.",
+          "step7": "Jumlah pembayaran, nomor virtual account, dan nama merchant akan muncul pada halaman konfirmasi pembayaran. Jika informasi yang dicantumkan benar, pilih <strong>Benar</strong>.",
+          "step8": "Pembayaran telah selesai. Simpan bukti pembayaran Anda."
+        }
+      }
+    },
+    "va_number": {
+      "bank_code": "Kode Bank: ",
+      "permata_code": "013",
+      "bni_code": "009",
+      "warning": "Harap selesaikan pembayaran sebelum: ",
+      "warning_ibanking": "Silakan menyelesaikan pembayaran Anda di ATM Mandiri atau melalui internet banking sebelum: ",
+      "company_code": "Kode Perusahaan",
+      "payment_code": "Kode Pembayaran",
+      "complete_payment": "Mohon Selesaikan Pembayaran",
+      "amount_tooltip": "Dikenakan biaya transfer sesuai bank pilihan Anda dan transaksi minimal Rp50.000 untuk Bank Mandiri"
+    }
+  },
+  "cimb_clicks": {
+    "overview": {
+      "first_line": "Pembayaran melalui OCTO Clicks harus diselesaikan di website OCTO Clicks.",
+      "second_line": "Pastikan Anda telah memiliki User ID OCTO Clicks dan sudah mendaftarkan mPIN sebelum melakukan pembayaran."
+    },
+    "instruction": {
+      "step1": "Pastikan Anda telah memiiki User ID OCTO Clicks dan sudah mendaftarkan mPIN sebelum melakukan pembayaran melalui OCTO Clicks ini.",
+      "step2": "Pembayaran melalui OCTO Clicks akan diproses secara online, saldo rekening CIMB Anda akan didebet secara otomatis sesuai jumlah pembelanjaan Anda.",
+      "step3": "Transaksi Anda akan dibatalkan jika pembayaran tidak diselesaikan dalam 2 jam.",
+      "step4": "Pastikan tidak ada pop up blocker yang aktif pada browser Anda."
+    }
+  },
+  "epay_bri": {
+    "overview": {
+      "first_line": "Pembayaran menggunakan e-Pay BRI harus diselesaikan dari website Internet Banking BRI.",
+      "second_line": "Pastikan Anda telah memiliki User ID Internet Banking BRI dan sudah mendaftarkan mTOKEN sebelum melakukan melanjutkan pembayaran menggunakan e-Pay BRI."
+    },
+    "instruction": {
+      "step1": "Pastikan Anda telah memiliki User ID Internet Banking BRI dan sudah mendaftarkan mTOKEN sebelum melakukan pembayaran menggunakan e-Pay BRI langsung dari website kami.",
+      "step2": "Untuk mendapatkan User ID Internet Banking BRI, silakan melakukan registrasi melalui ATM BRI terdekat.",
+      "step3": "Untuk mendaftarkan mTOKEN, silakan melakukan registrasi finansial di cabang BRI terdekat.",
+      "step4": "Pembayaran menggunakan e-Pay BRI akan diproses secara online, saldo rekening BRI Anda akan didebet secara otomatis sesuai jumlah pembelanjaan Anda.",
+      "step5": "Transaksi Anda akan dibatalkan jika pembayaran tidak diselesaikan dalam 2 jam."
+    }
+  },
+  "mandiri_ecash": {
+    "overview": {
+      "first_line": "Pembayaran melalui LINE Pay e-cash | mandiri e-cash harus diselesaikan di website Mandiri.",
+      "second_line": "Pastikan Anda telah mendaftarkan nomor ponsel untuk LINE Pay e-cash | mandiri e-cash."
+    },
+    "instruction": {
+      "step1": "Pastikan Anda telah mendaftarkan nomor ponsel untuk LINE Pay e-cash | mandiri e-cash.",
+      "step2": "Klik <strong>Bayar Sekarang</strong>.",
+      "step3": "Masukkan nomor ponsel yang sudah terdaftar dan PIN Anda.",
+      "step4": "Tunggu kiriman SMS e-cash yang berisi One Time Password (OTP).",
+      "step5": "<strong>Masukkan kode 6 angka OTP yang diterima</strong>, kemudian <strong>tekan tombol bayar</strong> untuk melakukan pembayaran.",
+      "step6": "Jika SMS OTP belum diterima / OTP Anda kadaluarsa dalam 5 menit. Klik tombol batal untuk mengulang transaksi dan Anda belum di debet."
+    }
+  },
+  "telkomsel_cash": {
+    "overview": "Pembayaran melalui T-Cash harus diselesaikan menggunakan nomor ponsel telkomsel yang telah terdaftar.",
+    "token_label": "Token T-Cash",
+    "token_placeholder": "Token T-Cash Anda",
+    "masked_error_message": "Transaksi Anda ditolak oleh T-Cash",
+    "token_error": "Token tidak valid",
+    "instruction": {
+      "step1": "Kirim SMS ke Telkomsel, ketik TOKEN &#60;PIN&#62;, kirim ke 2828.",
+      "step2": "Masukkan token yang didapatkan dari SMS balasan Telkomsel ke kolom TOKEN T-CASH.",
+      "step3": "Transaksi Anda akan dibatalkan jika Anda tidak melakukan pembayaran dalam waktu 30 menit."
+    }
+  },
+  "indomaret": {
+    "payment_code_subtext": "Kode Pembayaran",
+    "complete_at_indomaret": "Selesaikan Pembayaran di Indomaret",
+    "overview": "Pembayaran harus diselesaikan di toko Indomaret.",
+    "warning": "Silakan selesaikan pembayaran Anda di Indomaret sebelum:",
+    "payment_code": "kode pembayaran",
+    "instruction": {
+      "step1": "Setelah melakukan konfirmasi pembayaran, Anda akan diberikan Kode Pembayaran yang unik.",
+      "step2": "Salinlah Kode Pembayaran Anda dan jumlah pembayaran yang akan dibayarkan. Jangan Khawatir, Kami juga akan mengirimkan salinan Kode Pembayaran dan Instruksi Pembayaran melalui email kepada Anda.",
+      "step3": "Pergi ke toko Indomaret terdekat dan berikanlah nomor Kode Pembayaran Anda ke kasir.",
+      "step4": "Kasir Indomaret akan mengkonfirmasi transaksi dengan menanyakan jumlah pembayaran dan nama merchant.",
+      "step5": "Konfirmasikan pembayaran Anda ke kasir.",
+      "step6": "Transaksi Anda berhasil! Anda akan mendapatkan email konfirmasi pembayaran dan Simpanlah struk transaksi Indomaret Anda."
+    }
+  },
+  "bca_klikpay": {
+    "overview": "BCA KlikPay harus diselesaikan melalui website BCA KlikPay.",
+    "instruction": {
+      "step1": "Setelah Anda menekan tombol \"Bayar Sekarang\", Anda akan diarahkan ke halaman pembayaran BCA KlikPay.",
+      "step2": "Setelah Login ke Akun BCA Klikpay Anda dengan memasukkan alamat email dan password, maka akan tampil informasi data transaksi seperti nama merchant, waktu transaksi, dan jumlah yang harus dibayar. Pilihlah jenis pembayaran KlikBCA atau BCA Card untuk transaksi tersebut.",
+      "step3": "Untuk otorisasi pembayaran dengan BCA KlikPay, tekan tombol \"kirim OTP\", dan Anda akan menerima kode OTP (One Time Password) yang dikirim melalui SMS ke handphone Anda. Masukkan kode OTP tersebut pada kolom yang tersedia.",
+      "step4": "Apabila kode OTP yang Anda masukkan benar, transaksi pembayaran akan langsung diproses dan saldo rekening Anda (untuk jenis pembayaran KlikBCA) atau limit BCA Card Anda (untuk jenis pembayaran BCA Card) akan berkurang sejumlah nilai transaksi.",
+      "step5": "Status keberhasilan transaksi Anda akan tampil pada layar transaksi dan Anda akan menerima email notifikasi.",
+      "step6": "Informasi lebih lanjut tentang BCA KlikPay dapat hubungi Halo BCA di 1500888 atau kunjungi http://klikbca.com/KlikPay/klikpay.html"
+    }
+  },
+  "klikbca": {
+    "overview": {
+      "first_line": "Silakan selesaikan pembayaran Anda di KlikBCA dengan membuka <strong>www.klikbca.com</strong> pada jendela atau tab baru.",
+      "second_line": "Transaksi Anda akan dibatalkan jika pembayaran tidak diselesaikan dalam 2 jam."
+    },
+    "instruction": {
+      "step1": "Kunjungi situs web KlikBCA <strong>www.klikbca.com</strong>.",
+      "step2": "Login menggunakan userID KlikBCA Anda.",
+      "step3": "Pilih Menu Pembayaran e-commerce.",
+      "step4": "Pilih Kategori Lainnya.",
+      "step5": "Pilih Nama Perusahaan.",
+      "step6": "Klik Lanjutkan.",
+      "step7": "Pilih transaksi yang ingin Anda bayar dan pilih lanjutkan.",
+      "step8": "Konfirmasikan kembali pembayaran dengan memasukkan kunci token dan pilih kirim/lanjutkan."
+    },
+    "user_id_label": "User ID KlikBCA",
+    "user_id_placeholder": "User ID KlikBCA Anda",
+    "input_user_id": "Masukkan User ID",
+    "warning": "Silakan selesaikan pembayaran Anda di www.klikbca.com sebelum:",
+    "complete_payment": "SELESAIKAN PEMBAYARAN DI KlikBCA",
+    "pending_message": "Silakan selesaikan pembayaran Anda di www.klikbca.com pada jendela atau tab baru."
+  },
+  "danamon_online": {
+    "overview": {
+      "first_line": "Pembayaran melalui Danamon Online Banking harus diselesaikan di website Danamon.",
+      "second_line": "Pastikan Anda telah memiliki User ID Danamon Online Banking sebelum melakukan pembayaran."
+    },
+    "instruction": {
+      "step1": "Masukkan User ID dan Password Danamon Online Banking Anda dan pilih sumber rekening untuk pembayaran Anda.",
+      "step2": "Cek rincian informasi transaksi Anda, masukkan Kode Token, lalu tekan lanjut.",
+      "step3": "Konfirmasi transaksi pembayaran akan muncul, pembayaran selesai. Simpan informasi referensi merchant dan referensi pembayaran, tekan Lanjut untuk kembali ke situs merchant."
+    }
+  },
+  "akulaku": {
+    "overview": "Akulaku adalah aplikasi yang memudahkan Anda berbelanja secara kredit tanpa kartu kredit.",
+    "instruction": {
+      "step1": "Tekan tombol \"Bayar Sekarang\", lalu Anda akan diarahkan ke halaman Pusat Pembayaran Akulaku.",
+      "step2": "Pilih tenor cicilan yang diinginkan, laluÂ LoginÂ ke akun Akulaku Anda dengan memasukkan nomor ponsel dan password.",
+      "step3": "Masukkan kode verifikasi (OTP) yang telah dikirimkan ke ponsel Anda, lalu klik tombolÂ \"Selanjutnya\".",
+      "step4": "Akan tampil halaman konfirmasi, lalu Anda dapat menyelesaikan transaksi."
+    }
+  },
+  "error_pages": {
+    "_400": {
+      "title": "Bad request",
+      "caption_1": "Koneksi Anda mungkin tidak aman",
+      "caption_2": "Coba bersihkan cookies, cache, dan riwayat penelusuran di browser Anda"
+    },
+    "_403": {
+      "title": "Akses ditolak",
+      "caption_1": "Silakan cek kembali setelan koneksi Anda",
+      "caption_2": "atau kembali ke halaman sebelumnya."
+    },
+    "_404": {
+      "title": "Halaman tidak tersedia",
+      "caption_1": "Mungkin Anda salah ketik atau halaman yang Anda cari tidak ada."
+    },
+    "_500": {
+      "title": "Kesalahan sistem",
+      "caption_1": "Kami mengalami kendala teknis.",
+      "caption_2": "Silakan coba lagi atau kembali ke halaman sebelumnya."
+    },
+    "_504": {
+      "title": "Tidak Dapat Terhubung ke Midtrans",
+      "caption_1": "Harap pastikan koneksi <br/> internet anda berjalan baik",
+      "caption_2": "Bila masalah berlanjut, ada kemungkinan server kami <br/> sedang mengalami beban puncak. Harap coba lagi setelah beberapa saat"
+    },
+    "expired": {
+      "title": "Transaksi Anda telah kadaluarsa",
+      "caption_1": "Transaksi Anda sudah tidak tersedia lagi sehingga tidak dapat kami proses.",
+      "caption_2": "Silakan coba memesan kembali"
+    },
+    "not_found": {
+      "title": "Kami tidak menemukan transaksi Anda",
+      "caption_1": "Transaksi Anda tidak tersedia, atau URL yang Anda masukkan salah."
+    },
+    "processed": {
+      "title": "Transaksi Anda sedang diproses",
+      "caption_1": "Jika Anda menggunakan <b>e-wallet</b> atau <b>kartu kredit/debit</b>, pembayaran Anda telah selesai.",
+      "caption_2": "Jika Anda menggunakan <b>internet banking</b>, silakan selesaikan pembayaran Anda."
+    },
+    "succeed": {
+      "title": "Pembayaran berhasil"
+    },
+    "canceled": {
+      "title": "Transaksi Anda telah dibatalkan",
+      "caption_1": "Silakan coba memesan kembali."
+    }
+  }
+}
